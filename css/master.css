@@ -1,0 +1,160 @@
+/* Source: https://www.cs.umd.edu/~miyyer/ */
+
+/*article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}*/
+
+/* General Elements */
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0 none;
+}
+
+html {
+	height: 100%;
+	color: midnightblue;
+}
+
+h1 {
+	font-family: 'Georgia';
+	font-size:40px;
+	/*text-transform:uppercase;*/
+	font-weight: 400;
+	color: midnightblue;
+}
+
+h2 {
+	font-family: 'Georgia';
+	font-size:18px;
+	font-weight: 400;
+}
+
+body {
+	font-family: 'Georgia';
+	color: #110;
+
+	height: 100%;
+	margin: 100;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+img.wrap {
+	float: left;
+	margin: 30px 40px 50px 0px;
+}
+
+a {
+	padding-bottom: 5px;
+	color: firebrick;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	position:relative;
+	top:-2px;
+}
+
+p {
+	margin-bottom: 24px;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.6;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+p.intro {
+	font-size: 24px;
+}
+
+ul {
+	margin-bottom: 24px;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.6;
+	margin-left: 60px;
+	margin-right: 60px;
+	-webkit-font-smoothing: antialiased;
+}
+
+ul:last-child {
+	margin-bottom: 0;
+}
+
+ul.intro {
+	font-size: 24px;
+}
+
+.wrapper {
+	margin-top: 60px;
+	margin-left: 60px;
+	margin-right: 60px;
+	padding-bottom: 2cm;
+
+}
+
+.posts-wrapper {
+	max-width: 1000px;
+}
+
+.half-posts-wrapper {
+	width: 400px;
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+
+.gallery-posts-wrapper {
+	width: 620px;
+	float: left;
+	margin: 10px 10px 10px 10px;
+	padding: 20px;
+	border-width: 5px;
+	border-color: #99ff99;
+	border-style: solid solid solid solid;
+}
+
+.question {
+	margin-left: 40px;
+	padding:5px;
+	border-width:1px;
+	border-color:firebrick;
+	border-style: solid solid solid solid;
+	height: 192px; width: 800px; overflow: auto;
+	font-size:18px;
+}
+
+.post {
+}
+
+pre {
+	background-color: #fffff5;
+	color: #110110;
+	border: 3;
+	font-size:0.7em;
+	line-height:1.2em;
+	max-width: 1000px;
+
+	whitewhite-space: pre-wrap;       /* css-3 */
+	whitewhite-space: -pre-wrap;      /* Opera 4-6 */
+	whitewhite-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5+ */
+	whitewhite-space: -moz-pre-wrap;  /* Older Versions of Mozilla */
+}
