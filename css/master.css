@@ -38,6 +38,11 @@ body {
 img.wrap {
 	float: left;
 	margin: 30px 40px 50px 0px;
+	border-radius: 50%;
+}
+
+img.normal {
+	border-radius: 0%;
 }
 
 a {
