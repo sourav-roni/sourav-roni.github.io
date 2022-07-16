@@ -62,13 +62,16 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Recent Updates:</heading>
               <p>
+                <b>June 22:</b> <em> Our work on machine unlearning will also appear at <a href="https://upml2022.github.io">UpML 2022 – Updatable Machine Learning Workshop at ICML</a></em>
+              </p>
+              <p>
                 <b>June 22:</b><em> Research Internship at <a href="https://www.microsoft.com/en-us/research/group/vision/">Microsoft Research</a> in the Computer Vision group working with <a href="http://vibhavvineet.info/">Dr. Vibhav Vineet</a></em> and <a href="https://neelj.com/">Dr. Neel Joshi</a>
               </p>
               <p>
                 <b>May 22:</b><em> Our paper on multi resolution analysis for efficient self attention got accepted to <a href="https://icml.cc/Conferences/2022">ICML 2022</a></em>
               </p>
               <p>
-                <b>Mar 22:</b> <em> Our paper on machine unlearning got accepted to <a href="https://cvpr2022.thecvf.com/">CVPR 2022</a></em>
+                <b>Mar 22:</b> <em> Our paper on machine unlearning got accepted to <a href="https://cvpr2022.thecvf.com">CVPR 2022</a></em>
               </p>
             </td>
           </tr>
@@ -87,8 +90,8 @@
           <tr onmouseout="mra_stop()" onmouseover="mra_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='mra_image'><img src='images/wavelet.png'></div>
-                <img src='images/mra.png'>
+                <div class="two" id='mra_image'><img src='images/wavelet2.png'></div>
+                <img src='images/mra2.png'>
               </div>
               <script type="text/javascript">
                 function mra_start() {
@@ -102,18 +105,19 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://truth-discovery-kdd2019.github.io/papers/dfj.pdf"> -->
+              <a href="https://proceedings.mlr.press/v162/zeng22a/zeng22a.pdf">
                 <papertitle>Multi Resolution Analysis (MRA) for Approximate Self-Attention
                 </papertitle>
-              <!-- </a> -->
+              </a>
               <br>
               Zhanpeng Zeng,
               <strong>Sourav Pal</strong>, Jeffery Kline, <a href="https://scholar.google.com/citations?user=AWAcQaAAAAAJ&hl=en">Glenn Fung</a>, <a href="http://www.biostat.wisc.edu/~vsingh/">Vikas Singh</a>
               <br>
-              <em>To appear ICML</em>, 2022
+              <em>ICML</em> 2022
               <br>
               <p></p>
-              <p>Details to follow!</p>
+              <p>We revisit classical Multiresolution Analysis (MRA) concepts such as Wavelets, whose potential value in this setting remains underexplored thus far. We show that simple approximations based on empirical feedback and design choices informed by modern hardware and implementation challenges, eventually yield a MRA-based approach for self-attention with an excellent performance profile across most criteria of interest. We undertake an extensive set of experiments and demonstrate that this multi-resolution scheme outperforms most efficient self-attention proposals and is favorable for both short and long sequences</p>
+              <p><a href="https://github.com/mlpen/mra-attention">[Code]</a></p>
             </td>
           </tr>
 
@@ -143,7 +147,9 @@
               <a href="https://pages.cs.wisc.edu/~ronakrm/">Ronak Mehta</a><sup>*</sup>,
               <strong>Sourav Pal</strong><sup>*</sup>, <a href="http://www.biostat.wisc.edu/~vsingh/">Vikas Singh</a>, <a href="https://sathya-uic.github.io/">Sathya N. Ravi</a>
               <br>
-              <em>To appear CVPR</em>, 2022
+              <em>CVPR</em> 2022
+              <br>
+              <em>Also in UpML 2022 – Updatable Machine Learning Workshop at ICML</em> 2022
               <br>
               <p></p>
               <p>Machine Unlearning is the art of removing specific training samples from a predictive model as if they never existed in the training dataset. Recent ideas leveraging optimization-based updates scale poorly with the model dimension d, due to inverting the Hessian of the loss function. We use a variant of a new conditional independence coefficient, L-CODEC, to identify a subset of the model parameters with the most semantic overlap on an individual sample level. Our approach completely avoids the need to invert a (possibly) huge matrix. Our approach makes approximate unlearning possible in settings that would otherwise be infeasible, including vision models used for face recognition, person reidentification and transformer based NLP models.
