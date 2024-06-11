@@ -22,7 +22,7 @@
                 <name>Sourav Pal</name>
               </p>
               <p>
-                I am a fourth year PhD student of <b><a href="https://www.cs.wisc.edu/">Computer Sciences</a></b> at <b><a href="https://wisc.edu">UW-Madison</a></b>. I am very fortunate to be advised by <b><a href="http://www.biostat.wisc.edu/~vsingh/">Prof. Vikas Singh</a></b>. My broad research interests are in <b>Machine Learning</b> and their applications to problems in <b>Computer Vision</b>. I am specifically interested in harmonic analysis and hybrid models which combine strong function approximation properties of neural networks along side differntial equations to model real life physical processes.   
+                I am a fifth year PhD student of <b><a href="https://www.cs.wisc.edu/">Computer Sciences</a></b> at <b><a href="https://wisc.edu">UW-Madison</a></b>. I am very fortunate to be advised by <b><a href="http://www.biostat.wisc.edu/~vsingh/">Prof. Vikas Singh</a></b>. My broad research interests are in <b>Machine Learning</b> and their applications to problems in <b>Computer Vision</b>. I am specifically interested in harmonic analysis and hybrid models which combine strong function approximation properties of neural networks along side differntial equations to model real life physical processes.   
               </p>
               <p>
                 Before coming to Madison I was part of Adobe Acrobat Reader team.
@@ -62,14 +62,17 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Recent Updates:</heading>
               <p>
+                <b>June 24:</b> <em> New paper on Implicit Representations got accepted to <a href="https://icml.cc/Conferences/2024">ICML 2024</a></em>!
+              </p>
+              <p>
                 <b>April 23:</b> <em> Our work on Controlled Differential Equation got accepted to <a href="https://icml.cc/Conferences/2023">ICML 2023</a></em>!
               </p>
               <p>
                 <b>June 22:</b> <em> Our work on machine unlearning will also appear at <a href="https://upml2022.github.io">UpML 2022 – Updatable Machine Learning Workshop at ICML</a></em>
               </p>
-              <p>
+              <!-- <p>
                 <b>June 22:</b><em> Research Internship at <a href="https://www.microsoft.com/en-us/research/group/vision/">Microsoft Research</a> in the Computer Vision group working with <a href="http://vibhavvineet.info/">Dr. Vibhav Vineet</a></em> and <a href="https://neelj.com/">Dr. Neel Joshi</a>
-              </p>
+              </p> -->
               <p>
                 <b>May 22:</b><em> Our paper on multi resolution analysis for efficient self attention got accepted to <a href="https://icml.cc/Conferences/2022">ICML 2022</a></em>
               </p>
@@ -89,6 +92,60 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+
+          <tr onmouseout="oinr_stop()" onmouseover="oinr_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='oinr_image'><img src='images/OINR2.png'></div>
+                <img src='images/OINR1.png'>
+              </div>
+              <script type="text/javascript">
+                function oinr_start() {
+                  document.getElementById('oinr_image').style.opacity = "1";
+                }
+
+                function oinr_stop() {
+                  document.getElementById('oinr_image').style.opacity = "0";
+                }
+                oinr_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/pdf?id=2W3KUAaZgO">
+                <papertitle>Implicit Representations via Operator Learning
+                </papertitle>
+              </a>
+              <br>
+              <strong>Sourav Pal</strong>, Harshavardhan Adepu, <a href="https://clintonjwang.github.io/"> Clinton Wang </a>, <a href="https://people.csail.mit.edu/polina/">Polina Golland</a>, <a href="http://www.biostat.wisc.edu/~vsingh/">Vikas Singh</a>
+              <br>
+              <em>ICML</em> 2024
+              <br>
+              <p><a href="https://github.com/vsingh-group/oinr">[Code]</a></p>
+              <p></p>
+              <p>The idea of representing a signal as the weights of
+                a neural network, called Implicit Neural Representations (INRs), has led to exciting implications for
+                compression, view synthesis and 3D volumetric
+                data understanding. One problem in this setting
+                pertains to the use of INRs for downstream processing tasks. Despite some conceptual results,
+                this remains challenging because the INR for a
+                given image/signal often exists in isolation. What
+                does the neighborhood around a given INR correspond to? Based on this question, we offer
+                an operator theoretic reformulation of the INR
+                model, which we call Operator INR (or O-INR).
+                At a high level, instead of mapping positional encodings to a signal, O-INR maps one function
+                space to another function space. A practical form
+                of this general casting is obtained by appealing
+                to Integral Transforms. The resultant model does
+                not need multi-layer perceptrons (MLPs), used in
+                most existing INR models - we show that convolutions are sufficient and offer benefits including
+                numerically stable behavior. We show that O-INR
+                can easily handle most problem settings in the
+                literature, and offers a similar performance profile as baselines. These benefits come with minimal, if any, compromise.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="cde_stop()" onmouseover="cde_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -343,7 +400,7 @@
           <tr>
             <td>
               <heading>Reviewer:</heading>
-              NeurIPS 23, ICML 22, CVPR 22, WACV 22
+              ICML 24, NeurIPS 23, ICML 22, CVPR 22, WACV 22
             </td>
           </tr>
         </tbody></table>
