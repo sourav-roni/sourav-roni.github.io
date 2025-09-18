@@ -71,14 +71,17 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Recent Updates:</heading>
               <p>
+                <b>Sep 25:</b> <em> New paper on learnable sampling for PINNs got accepted to <a href="https://neurips.cc/">NeurIPS 2025</a></em>!
+              </p>
+              <p>
                 <b>June 24:</b> <em> New paper on Implicit Representations got accepted to <a href="https://icml.cc/Conferences/2024">ICML 2024</a></em>!
               </p>
               <p>
                 <b>March 24:</b> <em> Our work on sampling of temporal trajectories is out on <a href="https://arxiv.org/pdf/2403.11418">ArXiv</a>.</em> 
               </p>
-              <p>
+              <!-- <p>
                 <b>April 23:</b> <em> Our work on Controlled Differential Equation got accepted to <a href="https://icml.cc/Conferences/2023">ICML 2023</a></em>!
-              </p>
+              </p> -->
               <!-- <p>
                 <b>June 22:</b> <em> Our work on machine unlearning will also appear at <a href="https://upml2022.github.io">UpML 2022 – Updatable Machine Learning Workshop at ICML</a></em>
               </p> -->
@@ -106,7 +109,46 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="pinn_stop()" onmouseover="pinn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pinn_image'><img src='images/PINN2.jpeg'></div>
+                <img src='images/PINN1.jpeg'>
+              </div>
+              <script type="text/javascript">
+                function pinn_start() {
+                  document.getElementById('pinn_image').style.opacity = "1";
+                }
 
+                function pinn_stop() {
+                  document.getElementById('pinn_image').style.opacity = "0";
+                }
+                pinn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sourav-roni.github.io/">
+                <papertitle>PINNs with Learnable Quadrature
+                </papertitle>
+              </a>
+              <br>
+              <strong>Sourav Pal</strong>, <a href="https://kamyar.page/index.html"> Kamyar Azizzadenesheli </a>, <a href="http://www.biostat.wisc.edu/~vsingh/">Vikas Singh</a>
+              <br>
+              <em>NeurIPS</em> 2025
+              <br>
+              <!-- <p><a href="https://github.com/sourav-roni">[Code]</a></p> -->
+              <p></p>
+              <p>The growing body of work on Physics-Informed Neural Networks (PINNs) seeks to use machine learning strategies to improve methods for solution discovery 
+                of Partial Differential Equations (PDEs). While classical solvers may remain the preferred tool of choice in the short-term, PINNs can be viewed as complementary. 
+                The expectation is that in some specific use cases, they can even be effective, standalone. A key step in training PINNs is selecting domain points
+                for loss evaluation, where Monte Carlo sampling remains the dominant but often suboptimal in low dimension settings, common in physics. 
+                We leverage recent advances in asymptotic expansions of quadrature nodes and weights (for weight functions belonging to the modified Gauss-Jacobi family)
+                together with suitable adjustments for parameterization towards a data-driven framework for learnable quadrature rules. 
+                A direct benefit is a performance improvement of PINNs, relative to existing alternatives, on a wide range of problems  studied in the literature. 
+                Beyond finding a standard solution for an instance of a single PDE, our construction enables learning rules to predict solutions for a given family
+                of PDEs via hyper-networks, a useful capability for PINNs.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="oinr_stop()" onmouseover="oinr_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
