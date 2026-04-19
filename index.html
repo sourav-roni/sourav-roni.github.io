@@ -72,6 +72,9 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Recent Updates:</heading>
               <p>
+                <b>Jan 26:</b> <em> New paper on attention-free foundation models for fMRI at <a href="https://iclr.cc//">ICLR 2026</a></em>!
+              </p>
+              <p>
                 <b>Sep 25:</b> <em> New paper on learnable sampling for PINNs got accepted to <a href="https://neurips.cc/">NeurIPS 2025</a></em>!
               </p>
               <p>
@@ -109,7 +112,39 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+      <tr onmouseout="mnemo_stop()" onmouseover="mnemo_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mnemo_image'><img src='images/PINN2.jpeg'></div>
+                <img src='images/PINN1.jpeg'>
+              </div>
+              <script type="text/javascript">
+                function mnemo_start() {
+                  document.getElementById('mnemo_image').style.opacity = "1";
+                }
 
+                function mnemo_stop() {
+                  document.getElementById('mnemo_image').style.opacity = "0";
+                }
+                mnemo_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/pdf/b40e756fb2cc8c2ff32f2bacadeaf939395e1526.pdf">
+                <papertitle>MnemoDyn: Learning Resting State Dynamics from 40K FMRI sequences
+                </papertitle>
+              </a>
+              <br><strong>Sourav Pal</strong>, Viet Luong, Hoseok Lee, Tingting Dan, Guorong Wu, Richard Davidson, Won Hwa Kim, Vikas Singh<br> <em>ICLR</em> 2026
+              <br>
+              <em>ICLR </em> 2026
+              <br>
+              <!-- <p><a href="https://github.com/sourav-roni">[Code]</a></p> -->
+              <p></p>
+              <p>We present a dynamical-systems based model for resting-state functional magnetic resonance imaging (rs-fMRI), trained on a dataset of roughly K rs-fMRI sequences covering a wide variety of public and available-by-permission datasets. While most existing proposals use transformer backbones, we utilize multi-resolution temporal modeling of the dynamics across parcellated brain regions. We show that MnemoDyn is compute efficient and generalizes very well across diverse populations and scanning protocols. When benchmarked against current state-of-the-art transformer-based approaches, MnemoDyn consistently delivers superior reconstruction quality. Overall, we find that with such large-scale pre-training on (non-proprietary) rs-fMRI datasets, we get a highly performant model for various downstream tasks. Our results also provide evidence of the efficacy of the model on small sample size studies which has implications for neuroimaging studies at large 
+                where resting state fMRI is a commonly acquired imaging modality.</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="pinn_stop()" onmouseover="pinn_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
